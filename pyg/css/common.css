@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'icomoon';
-  src: url('/fonts/icomoon.eot?r8xdwy');
-  src: url('/fonts/icomoon.eot?r8xdwy#iefix') format('embedded-opentype'), url('/fonts/icomoon.ttf?r8xdwy') format('truetype'), url('/fonts/icomoon.woff?r8xdwy') format('woff'), url('/fonts/icomoon.svg?r8xdwy#icomoon') format('svg');
+  src: url('/fonts/icomoon.eot?6c68li');
+  src: url('/fonts/icomoon.eot?6c68li#iefix') format('embedded-opentype'), url('/fonts/icomoon.ttf?6c68li') format('truetype'), url('/fonts/icomoon.woff?6c68li') format('woff'), url('/fonts/icomoon.svg?6c68li#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -44,4 +44,77 @@
 .arrow::after {
   font-family: 'icomoon';
   content: "\e90e";
+}
+.header {
+  height: 105px;
+  position: relative;
+}
+.header > .logo a {
+  top: 25px;
+  position: absolute;
+  width: 171px;
+  height: 61px;
+  background: url(../images/logo.png) 100% no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+.header > .search {
+  position: absolute;
+  left: 346px;
+  width: 538px;
+  height: 36px;
+  top: 25px;
+  border: 2px solid #c81623;
+}
+.header > .search input[type="search"] {
+  width: 456px;
+  height: 32px;
+  float: left;
+  padding-left: 10px;
+}
+.header > .search input[type="button"] {
+  width: 78px;
+  height: 32px;
+  color: white;
+  float: left;
+  background-color: #c81623;
+}
+.header > .search .hotwords {
+  position: absolute;
+  top: 20px;
+}
+.header > .search .hotwords > ul > li {
+  margin: 19px 12px;
+  float: left;
+}
+.header > .search .hotwords > ul > li:nth-of-type(1) a {
+  color: #c81623;
+}
+.header .shopcar {
+  position: relative;
+}
+.header .shopcar a {
+  position: absolute;
+  width: 140px;
+  height: 36px;
+  right: 64px;
+  top: 25px;
+  text-align: center;
+  line-height: 32px;
+  border: 1px solid #dfdfdf;
+  background-color: #f7f7f7;
+}
+.header .shopcar a::before {
+  font-family: "icomoon";
+  content: "\e914";
+  font-size: 12px;
+  color: #c81623;
+  font-weight: 500;
+  margin-right: 5px;
+}
+.header .shopcar a::after {
+  font-family: "icomoon";
+  content: "\e904";
+  font-size: 12px;
+  margin-left: 10px;
 }
