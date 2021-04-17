@@ -161,6 +161,53 @@
             font-size: 12px;
             margin-left: 10px;
         }
-    }
 
+        .count {
+            position: absolute;
+            display: block;
+            height: 14px;
+            background-color: #e60012;
+            right: 86px;
+            top: 20px;
+            border-radius: 13px 13px 13px 0px;
+            text-align: center;
+            line-height: 14px;
+            padding: 0px 5px;
+            color: white;
+        }
+    }
+}
+
+.nav {
+    height: 47px;
+    margin-top: 12px;
+    border-bottom: 2px solid @themeColor;
+
+    .nav_box {
+
+        >.left_nav {
+            width: 210px;
+            height: 45px;
+            background-color: @themeColor;
+            font-size: 16px;
+            text-align: center;
+            line-height: 45px;
+            color: white;
+            margin-right: 40px;
+        }
+
+        >.right_nav {
+
+            ul>li {
+                float: left;
+                margin-right: 48px;
+                font-size: 16px;
+                line-height: 45px;
+
+                >a {
+                    display: block;
+                }
+            }
+        }
+    }
 }
