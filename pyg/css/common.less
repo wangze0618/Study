@@ -108,6 +108,7 @@
             height: 32px;
             color: white;
             float: left;
+            font-size: 16px;
             background-color: @themeColor;
         }
 
@@ -180,24 +181,75 @@
 
 .nav {
     height: 47px;
-    margin-top: 12px;
-    border-bottom: 2px solid @themeColor;
+    border-bottom: 2px solid #b1191a;
 
     .nav_box {
 
-        >.left_nav {
-            width: 210px;
-            height: 45px;
-            background-color: @themeColor;
-            font-size: 16px;
-            text-align: center;
-            line-height: 45px;
-            color: white;
+        >.dropdown {
             margin-right: 40px;
+            margin-top: 2px;
+
+            >.dt {
+                width: 100%;
+                height: 100%;
+                background-color: #b1191a;
+                font-size: 16px;
+                text-align: center;
+                line-height: 45px;
+                color: white;
+                margin-right: 40px;
+            }
+
+            >.dd {
+                display: block;
+                height: 465px;
+                width: 210px;
+                background-color: #c81623;
+                font-size: 14px;
+                color: white;
+
+                >ul {
+
+                    li+li {
+                        margin-top: -2px;
+                    }
+
+                    >li {
+                        position: relative;
+                        padding-left: 10px;
+                        margin-left: 2px;
+                        height: 31px;
+                        line-height: 31px;
+
+                        a {
+                            color: #fff;
+                            font-size: 14px;
+                        }
+
+                        &:hover {
+                            background-color: #fff;
+                            color: #c81623;
+                        }
+
+                        &:hover a {
+                            color: #c81623;
+                        }
+
+                        &::after {
+                            position:absolute;
+                            right: 10px;
+                            font-family: "icomoon";
+                            content: "\e904";
+                            font-size: 14px;
+                            line-height: 31px;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
         }
 
-        >.right_nav {
-
+        >.navitems {
             ul>li {
                 float: left;
                 margin-right: 48px;

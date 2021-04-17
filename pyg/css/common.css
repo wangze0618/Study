@@ -77,6 +77,7 @@
   height: 32px;
   color: white;
   float: left;
+  font-size: 16px;
   background-color: #c81623;
 }
 .header > .search .hotwords {
@@ -133,25 +134,66 @@
 }
 .nav {
   height: 47px;
-  margin-top: 12px;
-  border-bottom: 2px solid #c81623;
+  border-bottom: 2px solid #b1191a;
 }
-.nav .nav_box > .left_nav {
-  width: 210px;
-  height: 45px;
-  background-color: #c81623;
+.nav .nav_box > .dropdown {
+  margin-right: 40px;
+  margin-top: 2px;
+}
+.nav .nav_box > .dropdown > .dt {
+  width: 100%;
+  height: 100%;
+  background-color: #b1191a;
   font-size: 16px;
   text-align: center;
   line-height: 45px;
   color: white;
   margin-right: 40px;
 }
-.nav .nav_box > .right_nav ul > li {
+.nav .nav_box > .dropdown > .dd {
+  display: block;
+  height: 465px;
+  width: 210px;
+  background-color: #c81623;
+  font-size: 14px;
+  color: white;
+}
+.nav .nav_box > .dropdown > .dd > ul li + li {
+  margin-top: -2px;
+}
+.nav .nav_box > .dropdown > .dd > ul > li {
+  position: relative;
+  padding-left: 10px;
+  margin-left: 2px;
+  height: 31px;
+  line-height: 31px;
+}
+.nav .nav_box > .dropdown > .dd > ul > li a {
+  color: #fff;
+  font-size: 14px;
+}
+.nav .nav_box > .dropdown > .dd > ul > li:hover {
+  background-color: #fff;
+  color: #c81623;
+}
+.nav .nav_box > .dropdown > .dd > ul > li:hover a {
+  color: #c81623;
+}
+.nav .nav_box > .dropdown > .dd > ul > li::after {
+  position: absolute;
+  right: 10px;
+  font-family: "icomoon";
+  content: "\e904";
+  font-size: 14px;
+  line-height: 31px;
+  color: #fff;
+}
+.nav .nav_box > .navitems ul > li {
   float: left;
   margin-right: 48px;
   font-size: 16px;
   line-height: 45px;
 }
-.nav .nav_box > .right_nav ul > li > a {
+.nav .nav_box > .navitems ul > li > a {
   display: block;
 }
