@@ -201,7 +201,7 @@
             }
 
             >.dd {
-                display: block;
+                display: none;
                 height: 465px;
                 width: 210px;
                 background-color: #c81623;
@@ -236,7 +236,7 @@
                         }
 
                         &::after {
-                            position:absolute;
+                            position: absolute;
                             right: 10px;
                             font-family: "icomoon";
                             content: "\e904";
@@ -252,14 +252,81 @@
         >.navitems {
             ul>li {
                 float: left;
-                margin-right: 48px;
+                margin-right: 20px;
                 font-size: 16px;
                 line-height: 45px;
 
                 >a {
+                    padding: 0 20px;
                     display: block;
                 }
             }
         }
     }
+}
+
+.footer {
+    height: 420px;
+    background-color: #f5f5f5;
+    border: 1px solid red;
+}
+
+.foot_container {
+    width: 1200px;
+    margin: 0 auto;
+
+    >.mod_service {
+        height: 110px;
+        padding-top: 30px;
+        border-bottom: 1px solid #ededed;
+
+        li {
+            width: 300px;
+            height: 50px;
+            padding-left: 35px;
+            float: left;
+
+            h5 {
+                margin-right: 8px;
+                width: 50px;
+                height: 50px;
+                float: left;
+                background: url(../images/icons.png) no-repeat -252px -2px;
+            }
+        }
+
+    }
+}
+
+.mod_help {
+    padding-left: 52px;
+    padding-top: 20px;
+    height: 190px;
+    background-color: skyblue;
+
+    dl {
+        float: left;
+        width: 200px;
+
+        dt {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        &:nth-of-type(6) {
+            width: 90px;
+            text-align: center;
+
+            dd:nth-of-type(1) {
+                img{
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+
+.mod_right {
+    height: 120px;
+    background-color: palegreen;
 }
