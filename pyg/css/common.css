@@ -137,7 +137,6 @@
   border-bottom: 2px solid #b1191a;
 }
 .nav .nav_box > .dropdown {
-  margin-right: 40px;
   margin-top: 2px;
 }
 .nav .nav_box > .dropdown > .dt {
@@ -151,7 +150,7 @@
   margin-right: 40px;
 }
 .nav .nav_box > .dropdown > .dd {
-  display: none;
+  display: block;
   height: 465px;
   width: 210px;
   background-color: #c81623;
