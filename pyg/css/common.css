@@ -157,9 +157,6 @@
   font-size: 14px;
   color: white;
 }
-.nav .nav_box > .dropdown > .dd > ul li + li {
-  margin-top: -2px;
-}
 .nav .nav_box > .dropdown > .dd > ul > li {
   position: relative;
   padding-left: 10px;

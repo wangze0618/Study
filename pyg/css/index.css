@@ -21,6 +21,26 @@
   width: 721px;
   position: relative;
 }
+.main .focus .footList {
+  position: absolute;
+  height: 20px;
+  z-index: 2;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.883);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding-top: 3px;
+}
+.main .focus .footList > li {
+  width: 14px;
+  height: 14px;
+  margin: 0 5px;
+  float: left;
+  background-color: rgba(121, 116, 116, 0.876);
+  border-radius: 7px;
+}
 .main .focus .lists a {
   display: block;
   height: 35px;
