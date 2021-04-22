@@ -295,3 +295,33 @@
 
     }
 }
+
+.floor {
+    .box_hd {
+        height: 30px;
+        border-bottom: 2px solid #c81623;
+        margin-top: 28px;
+
+        h3 {
+            float: left;
+            color: #d82c37;
+            font-size: 18px;
+        }
+
+        ul {
+            float: right;
+            margin-right: 10px;
+
+            li {
+                float: left;
+
+                &:nth-of-type(2n) {
+                    margin: 4px 12px;
+                    height: 12px;
+                    width: 1px;
+                    background-color: #ddd;
+                }
+            }
+        }
+    }
+}
