@@ -85,9 +85,124 @@
   top: 50%;
   transform: translateY(-50%);
 }
-.newsFlash {
+.main .newsFlash {
   height: 455px;
   width: 250px;
   float: right;
-  background-color: violet;
+}
+.main .newsFlash .news {
+  height: 165px;
+  border: 1px solid red;
+  border: 1px solid #e8e8e7;
+}
+.main .newsFlash .news .news-hd {
+  border-bottom: 1px dashed #e8e8e7;
+  height: 32px;
+  line-height: 32px;
+}
+.main .newsFlash .news .news-hd h4 {
+  margin-left: 15px;
+  display: inline-block;
+}
+.main .newsFlash .news .news-hd span {
+  float: right;
+}
+.main .newsFlash .news .news-hd span a::after {
+  margin-right: 15px;
+  content: '\e904';
+  font-family: 'icomoon';
+}
+.main .newsFlash .news .news-bd {
+  height: 130px;
+  margin-left: 15px;
+}
+.main .newsFlash .news .news-bd > ul li {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 6px 0;
+}
+.main .newsFlash .lifeservice {
+  overflow: hidden;
+  height: 209px;
+  border: 1px solid #e8e8e7;
+  border-top: 0;
+}
+.main .newsFlash .lifeservice > ul {
+  width: 252px;
+}
+.main .newsFlash .lifeservice > ul li {
+  width: 63px;
+  height: 71px;
+  display: block;
+  float: left;
+  padding-top: 8px;
+  border-right: 1px solid #e8e8e7;
+  border-bottom: 1px solid #e8e8e7;
+}
+.main .newsFlash .lifeservice > ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.main .newsFlash .lifeservice > ul li a i {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-color: red;
+}
+.main .newsFlash .lifeservice > ul li span {
+  display: block;
+}
+.main .newsFlash .lifeservice > ul li:nth-of-type(1) i {
+  background: url(../images/icons.png);
+  background-position: -14px -11px;
+}
+.main .newsFlash .lifeservice > ul li:nth-of-type(2) i {
+  background: url(../images/icons.png);
+  background-position: -14px -11px;
+}
+.main .newsFlash .lifeservice > ul li:nth-of-type(3) i {
+  background: url(../images/icons.png);
+  background-position: -14px -11px;
+}
+.main .newsFlash .lifeservice > ul li:nth-of-type(4) i {
+  background: url(../images/icons.png);
+  background-position: -14px -11px;
+}
+.main .newsFlash .lifeservice > ul li:nth-of-type(5) i {
+  background: url(../images/icons.png);
+  background-position: -14px -11px;
+}
+.main .newsFlash .lifeservice > ul li:nth-of-type(6) i {
+  background: url(../images/icons.png);
+  background-position: -14px -11px;
+}
+.main .newsFlash .lifeservice > ul li:nth-of-type(7) i {
+  background: url(../images/icons.png);
+  background-position: -14px -11px;
+}
+.main .newsFlash .lifeservice > ul li:nth-of-type(8) i {
+  background: url(../images/icons.png);
+  background-position: -14px -11px;
+}
+.main .newsFlash .lifeservice > ul li:nth-of-type(9) i {
+  background: url(../images/icons.png);
+  background-position: -14px -11px;
+}
+.main .newsFlash .lifeservice > ul li:nth-of-type(10) i {
+  background: url(../images/icons.png);
+  background-position: -14px -11px;
+}
+.main .newsFlash .lifeservice > ul li:nth-of-type(11) i {
+  background: url(../images/icons.png);
+  background-position: -14px -11px;
+}
+.main .newsFlash .lifeservice > ul li:nth-of-type(12) i {
+  background: url(../images/icons.png);
+  background-position: -14px -11px;
+}
+.main .newsFlash .bargin {
+  margin-top: 6px;
 }

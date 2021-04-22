@@ -100,11 +100,167 @@
             }
         }
     }
-}
 
-.newsFlash {
-    height: 455px;
-    width: 250px;
-    float: right;
-    background-color: violet;
+    .newsFlash {
+        height: 455px;
+        width: 250px;
+        float: right;
+
+        .news {
+            height: 165px;
+            border: 1px solid red;
+            border: 1px solid #e8e8e7;
+
+            .news-hd {
+                border-bottom: 1px dashed #e8e8e7;
+                height: 32px;
+                line-height: 32px;
+
+                h4 {
+                    margin-left: 15px;
+                    display: inline-block;
+
+                }
+
+                span {
+                    float: right;
+
+                    a::after {
+                        margin-right: 15px;
+                        content: '\e904';
+                        font-family: 'icomoon';
+                    }
+                }
+            }
+
+            .news-bd {
+                height: 130px;
+                margin-left: 15px;
+
+                >ul {
+                    li {
+                        white-space: nowrap;
+                        overflow:hidden;
+                        text-overflow: ellipsis;
+                        margin: 6px 0;
+                    }
+                }
+            }
+        }
+
+        .lifeservice {
+            overflow: hidden;
+            height: 209px;
+            border: 1px solid #e8e8e7;
+            border-top: 0;
+
+            >ul {
+                width: 252px;
+
+                li {
+                    width: 63px;
+                    height: 71px;
+                    display: block;
+                    float: left;
+                    padding-top: 8px;
+                    border-right: 1px solid #e8e8e7;
+                    border-bottom: 1px solid #e8e8e7;
+           
+
+                    a {
+                        display: inline-block;
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+
+                        i {
+                            width: 30px;
+                            height: 30px;
+                            display: inline-block;
+                            background-color: red;
+                        }
+                    }
+
+                    span {
+                        display: block;
+                    }
+
+                    &:nth-of-type(1) i {
+                        background: url(../images/icons.png);
+                        background-position: -14px -11px;
+                    }
+
+                    &:nth-of-type(2) i {
+                        background: url(../images/icons.png);
+                        background-position: -14px -11px;
+
+                    }
+
+                    &:nth-of-type(3) i {
+                        background: url(../images/icons.png);
+                        background-position: -14px -11px;
+
+                    }
+
+                    &:nth-of-type(4) i {
+                        background: url(../images/icons.png);
+                        background-position: -14px -11px;
+
+                    }
+
+                    &:nth-of-type(5) i {
+                        background: url(../images/icons.png);
+                        background-position: -14px -11px;
+
+                    }
+
+                    &:nth-of-type(6) i {
+                        background: url(../images/icons.png);
+                        background-position: -14px -11px;
+
+                    }
+
+                    &:nth-of-type(7) i {
+                        background: url(../images/icons.png);
+                        background-position: -14px -11px;
+
+                    }
+
+                    &:nth-of-type(8) i {
+                        background: url(../images/icons.png);
+                        background-position: -14px -11px;
+
+                    }
+
+                    &:nth-of-type(9) i {
+                        background: url(../images/icons.png);
+                        background-position: -14px -11px;
+
+                    }
+
+                    &:nth-of-type(10) i {
+                        background: url(../images/icons.png);
+                        background-position: -14px -11px;
+
+                    }
+
+                    &:nth-of-type(11) i {
+                        background: url(../images/icons.png);
+                        background-position: -14px -11px;
+
+                    }
+
+                    &:nth-of-type(12) i {
+                        background: url(../images/icons.png);
+                        background-position: -14px -11px;
+
+                    }
+                }
+            }
+        }
+
+        .bargin {
+            margin-top: 6px;
+        }
+    }
 }
