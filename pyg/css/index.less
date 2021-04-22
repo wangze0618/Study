@@ -140,7 +140,7 @@
                 >ul {
                     li {
                         white-space: nowrap;
-                        overflow:hidden;
+                        overflow: hidden;
                         text-overflow: ellipsis;
                         margin: 6px 0;
                     }
@@ -165,7 +165,7 @@
                     padding-top: 8px;
                     border-right: 1px solid #e8e8e7;
                     border-bottom: 1px solid #e8e8e7;
-           
+
 
                     a {
                         display: inline-block;
@@ -262,5 +262,36 @@
         .bargin {
             margin-top: 6px;
         }
+    }
+}
+
+.recom {
+    height: 163px;
+    margin-top: 15px;
+
+    .recom_hd {
+        float: left;
+        height: 100%;
+        width: 205px;
+        background: url(../images/recom.png) center no-repeat;
+        background-color: #5c5251;
+    }
+
+    .recom_bd {
+        float: left;
+        height: 100%;
+        background-color: #ebebeb;
+
+        li {
+            float: left;
+
+            &:nth-of-type(2n) {
+                margin-top: 10px;
+                height: 143px;
+                width: 1px;
+                background-color: #ddd;
+            }
+        }
+
     }
 }
