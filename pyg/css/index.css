@@ -9,6 +9,9 @@
   width: 1200px;
   margin: 0 auto;
 }
+.style_red {
+  color: red;
+}
 .main {
   width: 980px;
   height: 455px;
@@ -253,4 +256,30 @@
   height: 12px;
   width: 1px;
   background-color: #ddd;
+}
+.floor .box_bd {
+  height: 361px;
+}
+.floor .box_bd .tab_list_item > div {
+  float: left;
+}
+.floor .box_bd .tab_list_item > div:nth-child(1) {
+  width: 210px;
+  background-color: blue;
+}
+.floor .box_bd .tab_list_item > div:nth-child(2) {
+  width: 329px;
+  background-color: blue;
+}
+.floor .box_bd .tab_list_item > div:nth-child(3) {
+  width: 221px;
+  background-color: blue;
+}
+.floor .box_bd .tab_list_item > div:nth-child(4) {
+  width: 221px;
+  background-color: blue;
+}
+.floor .box_bd .tab_list_item > div:nth-child(5) {
+  width: 219px;
+  background-color: blue;
 }
