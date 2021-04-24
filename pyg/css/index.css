@@ -211,7 +211,7 @@
 }
 .recom {
   height: 163px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 .recom .recom_hd {
   float: left;
@@ -259,7 +259,6 @@
 }
 .floor .box_bd {
   height: 361px;
-  background-color: blue;
 }
 .floor .box_bd .tab_list_item > div {
   height: 361px;
@@ -283,10 +282,20 @@
 }
 .floor .box_bd .tab_list_item > div:nth-child(3) {
   width: 221px;
+  border-right: 1px solid #ccc;
+}
+.floor .box_bd .tab_list_item > div:nth-child(3) a:nth-of-type(1) {
+  display: block;
+  border-bottom: 1px solid #ccc;
 }
 .floor .box_bd .tab_list_item > div:nth-child(4) {
   width: 221px;
+  border-right: 1px solid #ccc;
 }
 .floor .box_bd .tab_list_item > div:nth-child(5) {
   width: 219px;
+}
+.floor .box_bd .tab_list_item > div:nth-child(5) a:nth-of-type(1) {
+  display: block;
+  border-bottom: 1px solid #ccc;
 }

@@ -271,7 +271,7 @@
 
 .recom {
     height: 163px;
-    margin-top: 15px;
+    margin-top: 10px;
 
     .recom_hd {
         float: left;
@@ -331,7 +331,7 @@
 
     .box_bd {
         height: 361px;
-        background-color: blue;
+        // background-color: blue;
 
 
         .tab_list_item>div {
@@ -341,8 +341,9 @@
             &:nth-child(1) {
                 width: 210px;
                 background-color: #f9f9f9;
-                >ul{
-                    li{
+
+                >ul {
+                    li {
                         height: 34px;
                         width: 85px;
                         line-height: 34px;
@@ -360,14 +361,26 @@
 
             &:nth-child(3) {
                 width: 221px;
+                border-right: 1px solid #ccc;
+
+                a:nth-of-type(1) {
+                    display: block;
+                    border-bottom: 1px solid #ccc;
+                }
             }
 
             &:nth-child(4) {
                 width: 221px;
+                border-right: 1px solid #ccc;
             }
 
             &:nth-child(5) {
                 width: 219px;
+
+                a:nth-of-type(1) {
+                    display: block;
+                    border-bottom: 1px solid #ccc;
+                }
             }
         }
     }
