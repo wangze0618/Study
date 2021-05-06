@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            height: 2000px;
+            width: 2000px;
+        }
+        
+        #div1 {
+            width: 450px;
+            height: 450px;
+            border: 1px solid lightgray;
+            position: relative;
+        }
+        
+        #fa {
+            width: 200px;
+            height: 200px;
+            background-color: rgba(255, 170, 0, 0.4);
+            position: absolute;
+            cursor: move;
+        }
+        
+        #big-pic {
+            width: 600px;
+            height: 600px;
+            border: 1px solid red;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 450px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='div1'>
+        <img src="img/1.jpg" alt="">
+        <div id="fa"></div>
+        <div id="big-pic">
+            <img src="img/2.jpg" alt="">
+        </div>
+    </div>
+
+    <script>
+        var div1 = document.getElementById('div1')
+        var fa = document.getElementById('fa')
+
+        div1.onmousemove = function(event) {
+            var evt = event || window.event
+            var x = evt.pageX - div1.offsetLeft - (fa.offsetWidth / 2)
+            var y = evt.pageY - div1.offsetTop - (fa.offsetHeight / 2)
+
+            //利用两个if对鼠标的水平位置、垂直位置做限制。
+            if (x < 0) {
+                x = 0
+            } else if (x >= div1.offsetWidth - fa.offsetWidth) {
+                x = div1.offsetWidth - fa.offsetWidth - 2
+            }
+            if (y < 0) {
+                y = 0
+            } else if (y >= div1.offsetHeight - fa.offsetHeight) {
+                y = div1.offsetHeight - fa.offsetHeight - 2
+            }
+            fa.style.top = y + 'px'
+            fa.style.left = x + 'px'
+        }
+    </script>
+</body>
+
+</html>
