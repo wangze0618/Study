@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1第一种用Math对象
+        // let array = [-9, 2, 4, 1, -3, -9, 0, -11];
+        // let max = Math.max(...array);
+        // let min = Math.min(...array);
+        // console.log(max);
+        // console.log(min);
+
+        // 2第二种求数组最值方法
+        let array = [-9, 2, 4, 1, -3, -9, 0, -11, -1, 0, 91];
+        let [max, min] = [array[0], array[0]]
+        /*  let max = array[0] 相当于上面的写法
+         let min = array[0] */
+
+        // 求最大值
+        function maxm() {
+            for (let index = 1; index < array.length; index++) {
+                max = max < array[index] ? array[index] : max
+            }
+            return max
+        }
+
+        // 求最小值
+        function minm() {
+            for (let index = 1; index < array.length; index++) {
+                min = min > array[index] ? array[index] : min
+            }
+            return min
+        }
+    </script>
+</body>
+
+</html>

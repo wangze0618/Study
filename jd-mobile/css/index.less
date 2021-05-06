@@ -1,0 +1,66 @@
+body {
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    font-size: 14px;
+    background-color: #fff;
+    font-family: -apple-system, Helvetica, sans-serif;
+    color: #666;
+    line-height: 1.5;
+}
+
+img {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+
+.app {
+    height: 45px;
+
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            height: 45px;
+            background-color: #333;
+            float: left;
+            text-align: center;
+            line-height: 45px;
+            color: #fff;
+
+            &:nth-child(1) {
+                width: 8%;
+
+                img {
+                    width: 10px;
+                    height: 10px;
+
+                }
+            }
+
+            &:nth-child(2) {
+                width: 10%;
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                    vertical-align: middle;
+                }
+            }
+
+            &:nth-child(3) {
+                width: 57%;
+            }
+
+            &:nth-child(4) {
+                width: 25%;
+                background-color: #f63515;
+            }
+        }
+
+    }
+}

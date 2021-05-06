@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p></p>
+    <input type="button" value="stop">
+
+    <script>
+        var p = document.getElementsByTagName("p")[0];
+        var btn1 = document.getElementsByTagName("input")[0];
+
+        function getTime() {
+            var now = new Date();
+            var year = now.getFullYear()
+            var month = now.getMonth() + 1
+            var day = now.getDate()
+            var hour = now.getHours()
+            var minute = now.getMinutes()
+            var second = now.getSeconds()
+
+            hour = hour < 10 ? `0${hour}` : hour
+            minute = minute < 10 ? `0${minute}` : minute
+            second = second < 10 ? `0${second}` : second
+
+            p.innerHTML = `现在是：${year}年${month}月${day}日 | ${hour}时${minute}分${second}秒`
+        }
+        timer = setInterval('getTime()', 1000)
+
+        btn1.onclick = function() {
+            if (this.value == 'stop') {
+                this.value = 'start';
+                clearInterval(timer);
+            } else if (this.value == 'start') {
+                this.value = 'stop';
+                timer = setInterval('getTime()', 1000)
+            }
+        }
+    </script>
+</body>
+
+</html>
