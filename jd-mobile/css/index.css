@@ -4,7 +4,7 @@ body {
   min-width: 320px;
   margin: 0 auto;
   font-size: 14px;
-  background-color: #fff;
+  background-color: #b0e498;
   font-family: -apple-system, Helvetica, sans-serif;
   color: #666;
   line-height: 1.5;
@@ -50,4 +50,41 @@ img {
 .app ul li:nth-child(4) {
   width: 25%;
   background-color: #f63515;
+}
+.search {
+  height: 44px;
+  position: relative;
+  overflow: hidden;
+}
+.search .search-btn,
+.search .search-login {
+  width: 40px;
+  height: 44px;
+  position: absolute;
+  background-color: pink;
+  top: 0;
+}
+.search .search-btn {
+  left: 0;
+}
+.search .search-btn::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 18px;
+  background: url(/img/s-btn.png) no-repeat;
+  background-size: 20px 18px;
+  margin-top: 14px;
+  margin-left: 15px;
+}
+.search .search-login {
+  right: 0;
+  line-height: 44px;
+}
+.search .search-box {
+  height: 30px;
+  margin: 0 50px;
+  background-color: #e09e9e;
+  border-radius: 15px;
+  margin-top: 7px;
 }

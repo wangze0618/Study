@@ -4,7 +4,7 @@ body {
     min-width: 320px;
     margin: 0 auto;
     font-size: 14px;
-    background-color: #fff;
+    background-color: rgb(176, 228, 152);
     font-family: -apple-system, Helvetica, sans-serif;
     color: #666;
     line-height: 1.5;
@@ -17,7 +17,6 @@ img {
 
 .app {
     height: 45px;
-
 
     ul {
         list-style-type: none;
@@ -38,7 +37,6 @@ img {
                 img {
                     width: 10px;
                     height: 10px;
-
                 }
             }
 
@@ -61,6 +59,53 @@ img {
                 background-color: #f63515;
             }
         }
+    }
+}
+
+// 搜索
+.search {
+    height: 44px;
+    position: relative;
+    overflow: hidden; // 解决上边距叠加的问题
+
+    .search-btn,
+    .search-login {
+        width: 40px;
+        height: 44px;
+        position: absolute;
+        background-color: pink;
+        top: 0;
+    }
+
+    .search-btn {
+        left: 0;
+       
+        &::before {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 18px;
+            background: url(/img/s-btn.png) no-repeat;
+            background-size: 20px 18px;
+            margin-top: 14px;
+            margin-left: 15px;
+        }
+    }
+
+    .search-login {
+        right: 0;
+        line-height: 44px;
+    }
+
+    .search-box {
+        height: 30px;
+        margin: 0 50px;
+        background-color: rgb(224, 158, 158);
+        border-radius: 15px;
+        margin-top: 7px; // 这个属性会造成上边距合并
+        // 子盒子会带动整体往下
+        // 请给父盒子添加overflow:hidden
+
 
     }
 }
