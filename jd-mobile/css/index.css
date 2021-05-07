@@ -61,7 +61,6 @@ img {
   width: 40px;
   height: 44px;
   position: absolute;
-  background-color: pink;
   top: 0;
 }
 .search .search-btn {
@@ -84,7 +83,37 @@ img {
 .search .search-box {
   height: 30px;
   margin: 0 50px;
-  background-color: #e09e9e;
   border-radius: 15px;
   margin-top: 7px;
+  background-color: #fff;
+}
+.search .search-box ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.search .search-box ul li {
+  float: left;
+  margin: 0 10px;
+  margin-top: 7px;
+}
+.search .search-box ul li:nth-child(1) {
+  width: 20px;
+  height: 15px;
+  background: url(/img/jd.png) no-repeat;
+  background-size: 20px 15px;
+}
+.search .search-box ul li:nth-child(2) {
+  width: 1px;
+  background-color: #666;
+  margin-left: -2px;
+  height: 15px;
+}
+.search .search-box ul li:nth-child(3) {
+  width: 18px;
+  height: 15px;
+  background: url(/img/jd-sprites.png) no-repeat -81px 0;
+  background-size: 200px auto;
+  margin-left: -2px;
+  margin-top: 8px;
 }

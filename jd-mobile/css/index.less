@@ -73,13 +73,12 @@ img {
         width: 40px;
         height: 44px;
         position: absolute;
-        background-color: pink;
         top: 0;
     }
 
     .search-btn {
         left: 0;
-       
+
         &::before {
             content: '';
             display: block;
@@ -100,12 +99,48 @@ img {
     .search-box {
         height: 30px;
         margin: 0 50px;
-        background-color: rgb(224, 158, 158);
         border-radius: 15px;
         margin-top: 7px; // 这个属性会造成上边距合并
+        background-color: #fff;
+
         // 子盒子会带动整体往下
         // 请给父盒子添加overflow:hidden
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
 
+            li {
+                float: left;
+                margin: 0 10px;
+                margin-top: 7px;
+
+
+
+                &:nth-child(1) {
+                    width: 20px;
+                    height: 15px;
+                    background:url(/img/jd.png) no-repeat;
+                    background-size: 20px 15px;
+                }
+                &:nth-child(2){
+                    width: 1px;
+                    background-color: #666;
+                    margin-left: -2px;
+                    height: 15px;
+                }
+                &:nth-child(3){
+                    width: 18px;
+                    height: 15px;
+                    background:url(/img/jd-sprites.png) no-repeat -81px 0;
+                    background-size: 200px auto;
+                    margin-left: -2px;
+                    margin-top: 8px;
+                }
+            }
+
+
+        }
 
     }
 }
