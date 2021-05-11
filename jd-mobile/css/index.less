@@ -4,15 +4,21 @@ body {
     min-width: 320px;
     margin: 0 auto;
     font-size: 14px;
-    background-color: rgb(176, 228, 152);
+    // background-color: rgb(176, 228, 152);
     font-family: -apple-system, Helvetica, sans-serif;
     color: #666;
     line-height: 1.5;
 
-    a,img {
+    a,
+    img {
         -webkit-tap-highlight-color: transparent;
         -webkit-touch-callout: none;
         vertical-align: middle;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
     }
 
     .app {
@@ -100,6 +106,7 @@ body {
         .search-login {
             right: 0;
             line-height: 44px;
+            color: white;
         }
 
         .search-box {
@@ -161,7 +168,6 @@ body {
     }
 
     .brand {
-        // margin-top: -6px;
         border-radius: 10px 10px 0 0;
         overflow: hidden;
 
@@ -171,6 +177,35 @@ body {
 
             img {
                 width: 100%;
+            }
+        }
+    }
+}
+
+.nav {
+    margin-top: 5px;
+
+    ul {
+        list-style: none;
+
+        li {
+
+            a {
+                text-decoration: none;
+                color: #666;
+                width: 20%;
+                float: left;
+                text-align: center;
+
+                img {
+                    width: 2.5rem;
+                    margin: 10px 0;
+                }
+
+                span {
+                    display: block;
+                }
+
             }
         }
     }
