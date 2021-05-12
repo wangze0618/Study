@@ -4,10 +4,13 @@ body {
     min-width: 320px;
     margin: 0 auto;
     font-size: 14px;
-    // background-color: rgb(176, 228, 152);
     font-family: -apple-system, Helvetica, sans-serif;
     color: #666;
     line-height: 1.5;
+
+    input {
+        -webkit-appearance: none;
+    }
 
     a,
     img {
@@ -205,8 +208,39 @@ body {
                 span {
                     display: block;
                 }
-
             }
+        }
+    }
+}
+
+.news {
+    margin-top: 20px;
+
+
+    a {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        float: left;
+    }
+
+    a+a {
+        border-left: 1px solid #999;
+    }
+
+    a:nth-child(1) {
+        width: 50%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    a:nth-child(n+2) {
+        width: 25%;
+
+        img {
+            width: 100%;
+
         }
     }
 }

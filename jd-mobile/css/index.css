@@ -8,6 +8,9 @@ body {
   color: #666;
   line-height: 1.5;
 }
+body input {
+  -webkit-appearance: none;
+}
 body a,
 body img {
   -webkit-tap-highlight-color: transparent;
@@ -162,4 +165,27 @@ body .search .search-box input[type="search"] {
 }
 .nav ul li a span {
   display: block;
+}
+.news {
+  margin-top: 20px;
+}
+.news a {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+}
+.news a + a {
+  border-left: 1px solid #999;
+}
+.news a:nth-child(1) {
+  width: 50%;
+}
+.news a:nth-child(1) img {
+  width: 100%;
+}
+.news a:nth-child(n+2) {
+  width: 25%;
+}
+.news a:nth-child(n+2) img {
+  width: 100%;
 }
