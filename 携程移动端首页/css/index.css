@@ -75,3 +75,10 @@ body {
   margin: 4px auto;
   margin-bottom: -2px;
 }
+.focus {
+  width: 100%;
+  margin-top: 44px;
+}
+.focus img {
+  width: 100%;
+}
