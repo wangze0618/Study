@@ -64,7 +64,6 @@ body {
             background-position: -59px -279px;
             background-size: 104px auto;
             margin: 5px 8px;
-
         }
 
         span {
@@ -163,7 +162,36 @@ body {
                     background: url(../img/localnav_bg.png) no-repeat 0 -128px;
                 }
             }
-
         }
     }
+}
+
+// nav模块
+.nav {
+    margin: 2px 4px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    .nav2 {
+        margin: 3px 0;
+    }
+
+    div[class^="nav"] {
+        height: 88px;
+        display: flex;
+    }
+
+    div[class*="1"] {
+        background: -webkit-linear-gradient(left, #FA5A55, #FA994D);
+    }
+
+    div[class*="2"] {
+        background: -webkit-linear-gradient(left, #4B90ED, #53BCED);
+    }
+
+    div[class*="3"] {
+        background: -webkit-linear-gradient(left, #34C2A9, #6CD559);
+    }
+
+
 }
