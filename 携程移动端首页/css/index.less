@@ -7,7 +7,7 @@
 a {
     text-decoration: none;
     color: #222;
-    font-size: 0.75rem;
+    font-size: 12px;
 }
 
 ul {
@@ -171,27 +171,30 @@ body {
     margin: 2px 4px;
     border-radius: 8px;
     overflow: hidden;
+    background-color: pink;
 
-    .nav2 {
-        margin: 3px 0;
-    }
 
-    div[class^="nav"] {
-        height: 88px;
+    .nav-common {
         display: flex;
+        height: 88px;
     }
 
-    div[class*="1"] {
-        background: -webkit-linear-gradient(left, #FA5A55, #FA994D);
+    .nav-items {
+        flex: 1;
     }
 
-    div[class*="2"] {
-        background: -webkit-linear-gradient(left, #4B90ED, #53BCED);
-    }
 
-    div[class*="3"] {
-        background: -webkit-linear-gradient(left, #34C2A9, #6CD559);
-    }
+    // div[class*="1"] {
+    //     background: -webkit-linear-gradient(left, #FA5A55, #FA994D);
+    // }
+
+    // div[class*="2"] {
+    //     background: -webkit-linear-gradient(left, #4B90ED, #53BCED);
+    // }
+
+    // div[class*="3"] {
+    //     background: -webkit-linear-gradient(left, #34C2A9, #6CD559);
+    // }
 
 
 }

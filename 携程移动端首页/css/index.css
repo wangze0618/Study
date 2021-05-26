@@ -6,7 +6,7 @@
 a {
   text-decoration: none;
   color: #222;
-  font-size: 0.75rem;
+  font-size: 12px;
 }
 ul {
   list-style: none;
@@ -133,20 +133,12 @@ body {
   margin: 2px 4px;
   border-radius: 8px;
   overflow: hidden;
+  background-color: pink;
 }
-.nav .nav2 {
-  margin: 3px 0;
-}
-.nav div[class^="nav"] {
-  height: 88px;
+.nav .nav-common {
   display: flex;
+  height: 88px;
 }
-.nav div[class*="1"] {
-  background: -webkit-linear-gradient(left, #FA5A55, #FA994D);
-}
-.nav div[class*="2"] {
-  background: -webkit-linear-gradient(left, #4B90ED, #53BCED);
-}
-.nav div[class*="3"] {
-  background: -webkit-linear-gradient(left, #34C2A9, #6CD559);
+.nav .nav-items {
+  flex: 1;
 }
