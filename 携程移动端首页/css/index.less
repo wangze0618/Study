@@ -23,7 +23,6 @@ body {
     font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
     color: #000;
     background: #f2f2f2;
-    ;
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
 }
@@ -171,30 +170,73 @@ body {
     margin: 2px 4px;
     border-radius: 8px;
     overflow: hidden;
-    background-color: pink;
 
 
     .nav-common {
-        display: flex;
         height: 88px;
+        display: flex;
+
+        &:nth-child(1) {
+            background: -webkit-linear-gradient(left, #FA5A55, #FA994D);
+        }
+
+        &:nth-child(2) {
+            background: -webkit-linear-gradient(left, #4B90ED, #53BCED);
+        }
+
+        &:nth-child(3) {
+            background: -webkit-linear-gradient(left, #34C2A9, #6CD559);
+        }
+    }
+
+    .nav-items+,
+    .nav-items {
+        border-left: 1px solid #fff;
     }
 
     .nav-items {
         flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        a {
+            text-align: center;
+            line-height: 44px;
+            flex: 1;
+            color: #fff;
+            font-size: 14px;
+            text-shadow: 1px 1px rgba(0, 0, 0, .2);
+
+            &:nth-child(1) {
+                border-bottom: 1px solid #fff;
+            }
+        }
     }
 
+    .nav-common:nth-child(2) {
+        margin: 2px 0;
+    }
 
-    // div[class*="1"] {
-    //     background: -webkit-linear-gradient(left, #FA5A55, #FA994D);
-    // }
+    .nav-items:nth-child(1) a {
+        border: 0;
+        background: url(../img/hotel.png) no-repeat;
+        background-size: 121px auto;
+        background-position: bottom center;
+    }
+}
 
-    // div[class*="2"] {
-    //     background: -webkit-linear-gradient(left, #4B90ED, #53BCED);
-    // }
+// subnav模块开始
+.subnav {
+    border-radius: 8px;
+    background-color: #fff;
+    margin: 0 4px;
 
-    // div[class*="3"] {
-    //     background: -webkit-linear-gradient(left, #34C2A9, #6CD559);
-    // }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
 
-
+        li {
+            flex: 20%;
+        }
+    }
 }
