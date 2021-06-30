@@ -1,0 +1,84 @@
+// @import 可以把一个样式文件导入到另一个样式文件里面
+// link 是把一个样式文件引入到 html页面里面
+@import "common.less";
+@baseFont: 50;
+
+a {
+    text-decoration: none;
+}
+
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f2f2;
+}
+
+.search-content {
+    width: (750rem/@baseFont);
+    height: 1.76rem;
+    background-color: #ffc001;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+
+    .classify {
+        width: (44rem/@baseFont);
+        height: (70rem/@baseFont);
+        margin: (11rem/@baseFont) (25rem/@baseFont) (7rem/@baseFont) (24rem/@baseFont);
+        background: url(../img/classify.png) no-repeat;
+        background-size: (44rem/@baseFont) (70rem/@baseFont);
+    }
+
+    .search {
+        flex: 1;
+
+        form {
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            input {
+                outline: none;
+                width: 100%;
+                border: 0;
+                height: (66rem/@baseFont);
+                border-radius: (33rem/@baseFont);
+                background-color: #FFF2CC;
+                // margin-top: (12em/@baseFont);
+                font-size: (25rem/@baseFont);
+                padding-left: (55rem/@baseFont);
+                color: #757575;
+                // width: 100%;
+                // border: 0;
+                // height: 1.32rem;
+                // border-radius: 0.66rem;
+                // background-color: #FFF2CC;
+                // margin-top: 0.24rem;
+                // font-size: 0.5rem;
+                // padding-left: 1.1rem;
+                // color: #757575;
+            }
+        }
+    }
+
+    .login {
+        width: (75rem/@baseFont);
+        height: (70rem/@baseFont);
+        margin: (10rem/@baseFont);
+        font-size: (25rem/@baseFont);
+        line-height: (70rem/@baseFont);
+        color: #fff;
+        text-align: center;
+    }
+}
+
+.banner {
+    img {
+        width: (750rem/@baseFont)
+    }
+}
