@@ -112,6 +112,11 @@ body {
   color: #fff;
   text-align: center;
 }
-.banner img {
+.banner {
   width: 15rem;
+  height: 7.36rem;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
 }
