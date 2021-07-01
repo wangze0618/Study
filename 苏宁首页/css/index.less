@@ -91,11 +91,35 @@ body {
     display: flex;
 
     a {
+        flex: 1;
 
         img {
             height: (200rem/@baseFont);
             width: (250rem/@baseFont);
 
+        }
+    }
+}
+
+.nav {
+    width: (750rem/@baseFont);
+
+    a {
+        float: left;
+        width: (150rem/@baseFont);
+        height: (140rem/@baseFont);
+        text-align: center;
+
+        img {
+            display: block;
+            height: (82rem/@baseFont);
+            width: (82rem/@baseFont);
+            margin: 0.2rem auto 0;
+        }
+
+        span {
+            font-size: (25rem/@baseFont);
+            color: #333;
         }
     }
 }
