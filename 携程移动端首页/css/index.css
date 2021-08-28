@@ -32,10 +32,12 @@ body {
   position: fixed;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
+  background-color: #f6f6f6;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
+  z-index: 22;
 }
 .search .search-box {
   margin: 9px 5px;
@@ -162,7 +164,7 @@ body {
   flex: 1;
   color: #fff;
   font-size: 14px;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+  text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px;
 }
 .nav .nav-items a:nth-child(1) {
   border-bottom: 1px solid #fff;
@@ -180,6 +182,7 @@ body {
   border-radius: 8px;
   background-color: #fff;
   margin: 0 4px;
+  padding: 5px 0;
 }
 .subnav ul {
   display: flex;
@@ -187,4 +190,76 @@ body {
 }
 .subnav ul li {
   flex: 20%;
+}
+.subnav ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subnav ul li a .subnav-icon {
+  width: 28px;
+  height: 28px;
+  background: url(../img/subnav-bg.png) no-repeat;
+  background-size: 24px auto;
+  background-position: 3px 7px;
+}
+.sales-box {
+  background-color: #fff;
+  border-top: 1px solid #bbb;
+  margin: 4px;
+}
+.sales-box .sales-hd {
+  height: 44px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+.sales-box .sales-hd h2 {
+  text-indent: -9999px;
+  overflow: hidden;
+  position: relative;
+}
+.sales-box .sales-hd h2::after {
+  position: absolute;
+  content: '';
+  width: 80px;
+  height: 15px;
+  background: url(../img/hot.png) no-repeat;
+  background-size: 79px auto;
+  background-position: 0px -20px;
+  top: 14px;
+  left: 15px;
+}
+.sales-box .sales-hd a {
+  position: absolute;
+  right: 9px;
+  top: 10px;
+  color: #fff;
+  border-radius: 15px;
+  padding: 3px 20px 3px 10px;
+  background: -webkit-linear-gradient(left, #FF506C, #FF6BC6);
+}
+.sales-box .sales-hd a::after {
+  content: '';
+  float: right;
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  margin: 4.5px -8px 0 0;
+  transform: rotate(45deg);
+}
+.sales-bd .row {
+  display: flex;
+}
+.sales-bd .row a {
+  border-bottom: 1px solid #eee;
+}
+.sales-bd .row a:nth-child(2n) {
+  border-left: 1px solid #eee;
+}
+.sales-bd .row a {
+  flex: 50%;
+}
+.sales-bd .row a img {
+  width: 100%;
 }
