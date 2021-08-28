@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* 根据设计稿，宽度是1280px,
+因此需要手动修改container的最大宽度为1280px*/
+@media (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+/* header部分 */
+.no-left-padding {
+  padding-left: 0;
+}
+
+.logo {
+  background-color: #429ad9;
+}
+
+.logo a img {
+  width: 100%;
+}
+/*# sourceMappingURL=index.css.map */
