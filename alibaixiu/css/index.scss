@@ -42,7 +42,9 @@ a {
     a {
 
         img {
-            width: 100%;
+            display: block;
+            max-width: 100%;
+            margin: 0 auto;
         }
     }
 }
@@ -52,9 +54,11 @@ a {
 
     .nav-ul {
         list-style: none;
+        border-bottom: 1px solid #ccc;
+        margin: 0;
 
         li {
-            margin-top: 3px;
+            // margin-top: 3px;
 
             &:hover {
                 background-color: #fff;
@@ -68,9 +72,12 @@ a {
                 line-height: 50px;
                 font-size: 16px;
                 padding-left: 30px;
+
+                &::before {
+                    vertical-align: middle;
+                    padding-right: 3px;
+                }
             }
         }
     }
-
-    .glyphicon {}
 }

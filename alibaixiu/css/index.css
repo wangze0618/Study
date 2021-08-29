@@ -35,7 +35,9 @@ a:hover {
 }
 
 .logo a img {
-  width: 100%;
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .nav {
@@ -44,10 +46,8 @@ a:hover {
 
 .nav .nav-ul {
   list-style: none;
-}
-
-.nav .nav-ul li {
-  margin-top: 3px;
+  border-bottom: 1px solid #ccc;
+  margin: 0;
 }
 
 .nav .nav-ul li:hover {
@@ -62,4 +62,8 @@ a:hover {
   font-size: 16px;
   padding-left: 30px;
 }
-/*# sourceMappingURL=index.css.map */
+
+.nav .nav-ul li a::before {
+  vertical-align: middle;
+  padding-right: 3px;
+}
