@@ -88,6 +88,7 @@ a:hover {
   margin-bottom: 0;
   padding-left: 10px;
   color: #fff;
+  height: 41px;
 }
 
 .news ul li a {
@@ -108,7 +109,6 @@ a:hover {
 }
 
 .news ul li:nth-child(1) p {
-  height: 41px;
   font-size: 20px;
   bottom: 0;
   line-height: 41px;
@@ -122,4 +122,25 @@ a:hover {
 .news ul li:nth-child(n+2) p {
   bottom: 0;
   font-size: 12px;
+  padding: 5px 10px;
+}
+
+.publish {
+  border-top: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.publish .row {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.publish .row a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.publish .row a img {
+  margin-top: 8px;
 }
