@@ -299,3 +299,9 @@
   display: block;
   border-bottom: 1px solid #ccc;
 }
+.lunbo {
+  width: 600%;
+}
+.lunbo li {
+  float: left !important;
+}
