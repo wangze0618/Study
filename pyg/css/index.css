@@ -303,9 +303,14 @@
 }
 .lunbo {
   width: 600%;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
 }
 .lunbo li {
   float: left !important;
+  overflow: hidden;
 }
 .current {
   background-color: #d82c37 !important;

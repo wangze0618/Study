@@ -16,22 +16,22 @@ window.addEventListener('load', function () {
 
 
     for (let index = 0; index < imgLength; index++) {
-        // console.log(index);
         const foots = this.document.createElement('li');
-        // footList.insertBefore(foots, footList.children[0])
-        footList.appendChild(foots)
+        footList.appendChild(foots);
+        foots.setAttribute('index', index);
+
+        foots.addEventListener('click', function () {
+            const indexs = foots.getAttribute('index');
+
+            for (let index = 0; index < footList.children.length; index++) {
+                footList.children[index].className = '';
+            }
+            this.className = 'current'
+
+            let step = lunbo.children[0].offsetWidth * indexs;
+            animate(lunbo, -step)
+        })
     }
     footList.children[0].className = 'current'
-
-
-
-
-
-
-
-
-
-
-
 
 })
