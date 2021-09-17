@@ -58,9 +58,9 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 .main .focus .lists #lists1 {
-  display: none;
+  display: block;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   left: 0;
 }
 .main .focus .lists #lists1 > a {
@@ -72,9 +72,9 @@
   font-family: 'icomoon';
 }
 .main .focus .lists #lists2 {
-  display: none;
+  display: block;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   right: 0;
 }
 .main .focus .lists #lists2 > a {
@@ -306,11 +306,9 @@
   position: relative;
   top: 0;
   left: 0;
-  overflow: hidden;
 }
 .lunbo li {
   float: left !important;
-  overflow: hidden;
 }
 .current {
   background-color: #d82c37 !important;
