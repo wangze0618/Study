@@ -18,8 +18,10 @@ window.addEventListener('load', function () {
     for (let index = 0; index < imgLength; index++) {
         // console.log(index);
         const foots = this.document.createElement('li');
-        footList.insertBefore(foots, footList.children[0])
+        // footList.insertBefore(foots, footList.children[0])
+        footList.appendChild(foots)
     }
+    footList.children[0].className = 'current'
 
 
 
