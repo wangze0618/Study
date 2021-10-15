@@ -46,7 +46,6 @@ window.addEventListener('load', function () {
     })
 
 
-
     arrowL.addEventListener('click', function () {
         if (flag == imgLength - 1) {
             lunbo.style.left = 0;

@@ -20,7 +20,7 @@ ul {
   .news ul li:nth-child(1) {
     width: 100% !important;
   }
-  .news ul li:nth-child(n+2) {
+  .news ul li:nth-child(n + 2) {
     width: 50% !important;
   }
   .publish h3 {
@@ -149,12 +149,12 @@ a:hover {
   line-height: 41px;
 }
 
-.news ul li:nth-child(n+2) {
+.news ul li:nth-child(n + 2) {
   width: 25%;
   height: 128px;
 }
 
-.news ul li:nth-child(n+2) p {
+.news ul li:nth-child(n + 2) p {
   bottom: 0;
   font-size: 12px;
   padding: 5px 10px;
