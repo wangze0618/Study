@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .btn1 {
+    float: right;
+    margin-top: 10px;
+  }
+}
+
+.badge-blue {
+  background-color: #5bc0de;
+}
+
+.badge-yellow {
+  background-color: #f0ad4e;
+}
+/*# sourceMappingURL=common.css.map */
