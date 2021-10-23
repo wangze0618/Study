@@ -58,6 +58,9 @@
 		// 定义防抖函数
 		let timer = null;
 
+		// 定义缓存对象
+		const cacheObj = {}
+
 		// 1 为输入框绑定keyup事件
 		$('#ipt').on('keyup', function () {
 			clearTimeout(timer)
@@ -65,10 +68,19 @@
 			if (keywd.length <= 0) {
 				return $('#suggest-list').empty().hide();
 			}
+
+			// 判断缓存中是否有数据
+			if (cacheObj[keywd]) {
+				return renderList(cacheObj[keywd])
+			}
+
+
+
 			deBounce(keywd)
 
 		})
 
+		// 跨域请求jsonp
 		function getSuggestList(kw) {
 			$.ajax({
 				// q 是用户输入的关键字
@@ -80,15 +92,22 @@
 			});
 		}
 
+		// 渲染列表
 		function renderList(res) {
 			if (res.length <= 0) {
 				return $('#suggest-list').empty().hide();
 			} else {
 				let tplStr = template('tpl1', res)
 				$('#suggest-list').html(tplStr).show()
+
+				// 获取到用户输入的内容 当做键
+				let k = $('#ipt').val().trim();
+				// 将res 当做值
+				cacheObj[k] = res
 			}
 		}
 
+		// 防抖函数定义
 		function deBounce(keywd) {
 			timer = setTimeout(function () {
 				getSuggestList(keywd)
