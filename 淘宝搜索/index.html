@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<!-- 导入页面的基本样式 -->
+	<link rel="stylesheet" href="./css/search.css" />
+	<!-- 导入 jQuery -->
+	<script src="./lib/jquery.js"></script>
+	<!-- 导入模板引擎 -->
+	<script src="./lib/template-web.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<!-- Logo -->
+		<img src="./images/taobao_logo.png" alt="" class="logo" />
+
+		<div class="box">
+			<!-- tab 栏 -->
+			<div class="tabs">
+				<div class="tab-active">宝贝</div>
+				<div>店铺</div>
+			</div>
+
+			<!-- 搜索区域（搜索框和搜索按钮） -->
+			<div class="search-box">
+				<input id="ipt" type="text" class="ipt" placeholder="请输入要搜索的内容" /><button class="btnSearch">
+					搜索
+				</button>
+			</div>
+
+			<!-- 搜索建议列表 -->
+			<div id="suggest-list">
+				<ul>
+					<li>1</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+<!-- 定义模板结构 -->
+<script type="text/html" id="tpl1">
+	{{each result}}
+	<div class="suggest-item">
+		{{$value[0]}}
+	</div>
+	{{/each}}
+</script>
+
+<script>
+	$(function () {
+		// 定义防抖函数
+		let timer = null;
+
+		// 1 为输入框绑定keyup事件
+		$('#ipt').on('keyup', function () {
+			clearTimeout(timer)
+			let keywd = $(this).val().trim();
+			if (keywd.length <= 0) {
+				return $('#suggest-list').empty().hide();
+			}
+			deBounce(keywd)
+
+		})
+
+		function getSuggestList(kw) {
+			$.ajax({
+				// q 是用户输入的关键字
+				url: `https://suggest.taobao.com/sug?q=${kw}`,
+				dataType: "jsonp",
+				success: res => {
+					renderList(res)
+				}
+			});
+		}
+
+		function renderList(res) {
+			if (res.length <= 0) {
+				return $('#suggest-list').empty().hide();
+			} else {
+				let tplStr = template('tpl1', res)
+				$('#suggest-list').html(tplStr).show()
+			}
+		}
+
+		function deBounce(keywd) {
+			timer = setTimeout(function () {
+				getSuggestList(keywd)
+			}, 500)
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	})
+</script>
+
+</html>
